@@ -1,0 +1,330 @@
+{ "data": [ 
+    {
+         "name": "钟玉征", 
+         "title": "将军", 
+         "birth_year": 1930,
+         "death_year": 2021, 
+         "graduate_year": 1950, 
+        "major": "化学", 
+        "image":"https://picdl.sunbangyan.cn/2023/10/28/096a19e20a4c1f70c55c6b46333f434a.png",
+         "university": "北京大学", 
+         "achievements": [ 
+            "两度任化学裁军核查国际实验室我国联试专家组组长",
+             "获军委一等功并授少将军衔", 
+             "获“全国三八红旗手”、“全国巾帼建功标兵”等称号" 
+             ] 
+            }, 
+     { 
+        "name": "葛佶",
+         "title": "研究员", 
+         "birth_year": 1929,
+          "death_year": 2018, 
+          "graduate_year": 1952, 
+          "major": "外语", 
+          "university": "北京大学", 
+          "image":"https://picdm.sunbangyan.cn/2023/10/28/46cc79e5a6f2177e670a62c13875ada0.png",
+          "achievements": 
+          [ 
+                "长期致力于非洲问题研究",
+                "曾获得“首届中非友好贡献奖——感动非洲的十位中国人”称号",
+                 "中国社会科学院荣誉学部委员" ]},
+    {
+        "name": "郑小瑛",
+        "title": "教授",
+        "birth_year": 1929,
+        "graduate_year": "1947-1948",
+        "major": "生物系医预科",
+        "university": "金女大",
+        "image":"https://picst.sunbangyan.cn/2023/10/28/a9dc235a33cc6cfa9daf294b46a0057e.png",
+        "achievements": [
+             "中央音乐学院指挥系主任教授",
+             "中央歌剧院首席指挥",
+             "中国音乐家协会常务理事"
+    ]
+    },
+    {
+         "name": "赵钧鸿",
+         "title": "博士",
+         "birth_year": 1928,
+         "graduate_year": "1946-1949",
+         "major": "社会系",
+        "university": "金女大",
+        "image":"https://picst.sunbangyan.cn/2023/10/28/2546203ca63bf0661f567313a0ab118b.png",
+         "achievements": [
+    "著名幼儿教育家",
+    "被聘为多个著名幼儿园高级顾问",
+    "获得香港“杰出教育家奖”"
+    ]
+    },
+    {
+    "name": "皇甫玉珊",
+    "title": "将军",
+    "birth_year": 1927,
+    "graduate_year": "1946-1949",
+    "major": "生物系医预科",
+    "university": "金女大",
+    "image":"https://picdl.sunbangyan.cn/2023/10/28/2c6f3ef59021e2ac45dd96c3a5b59a4b.png",
+    "achievements": [
+    "解放军302医院院长(中将级)教授",
+    "中央保健专家",
+    "著名传染病研究员"
+    ]
+    },
+    {
+    "name": "彭洪福",
+    "title": "将年",
+    "birth_year": 1919,
+    "graduate_year": 1943,
+    "major": "化学系",
+    "university": "金女大",
+    "image":"https://picst.sunbangyan.cn/2023/10/28/f2a6076926d115acb6e2a50f9d90233e.png",
+    "achievements": [
+    "解决我国西部边防战士的高山病",
+    "研制出“高山神药”复方党参片",
+    "获全国科技大会奖"
+    ]
+    },
+    {
+    "name": "李振坤",
+    "title": "教授",
+    "birth_year": 1928,
+    "death_year": 2016,
+    "graduate_year": 1951,
+    "major": "社会工作系",
+    "university": "金女大",
+    "image":"https://picst.sunbangyan.cn/2023/10/28/fc41378476baf137902f7e4594c2eb18.png",
+    "achievements": [
+    "著名经济学家",
+    "南京师范大学政治经济学教授",
+    "对南师大经济学科的建设和发展贡献良多"
+    ]
+    },
+    {
+    "name": "鲁洁",
+    "title": "教授",
+    "birth_year": 1930,
+    "graduate_year": "1947-1949",
+    "major": "社会系",
+    "university": "金女大",
+    "image":"https://picdm.sunbangyan.cn/2023/10/28/0090c617c2377126cf655d650aa35fc9.png",
+    "achievements": [
+    "南京师范大学教育系主任",
+    "中国教育研究会德育专业委员会主任",
+    "获得多项教育奖项和荣誉"
+    ]
+    },
+    {
+    "name": "熊菊贞",
+    "title": "博士",
+    "birth_year": 1918,
+    "death_year": 2006,
+    "graduate_year": 1941,
+    "major": "生物系",
+    "university": "金女大",
+    "image":"https://picss.sunbangyan.cn/2023/10/28/78a148a46f485751a021b06d144e4a8f.png",
+    "achievements": [
+    "美国病毒学会创始人",
+    "国际病毒医学界知名科学家及教育家",
+    "获得多项荣誉和奖励"
+    ]
+    },
+    {
+    "name": "李果珍",
+    "title": "博士",
+    "birth_year": 1915,
+    "graduate_year": "1935-1937",
+    "major": "医预科",
+    "university": "金女大",
+    "image":"https://picdm.sunbangyan.cn/2023/10/28/ce5d0afd5ae355b88e4e8da21233bd92.png",
+    "achievements": [
+    "协和医科大学教授",
+    "中国医学影像学的带头人",
+    "连续四届任全国政协委员"
+    ]
+    },
+    {
+    "name": "徐芝秀",
+    "title": "教授",
+    "birth_year": 1915,
+    "death_year": 2008,
+    "graduate_year": 1937,
+    "major": "文科",
+    "university": "金女大",
+    "image":"https://picst.sunbangyan.cn/2023/10/28/828083cd3a9b0999b180b9209b5385e7.png",
+    "achievements": [
+    "奥地利共和国金质功绩勋章",
+    "为中奥及中美建交做出重要贡献",
+    "对恢复中国的联合国地位有贡献"
+    ]
+    },
+    {
+    "name": "张素我",
+    "title": "教授",
+    "birth_year": 1915,
+    "death_year": 2011,
+    "graduate_year": 1933,
+    "major": "英文系",
+    "university": "金女大",
+    "image":"https://picdm.sunbangyan.cn/2023/10/28/6595191e8def92edb08b8b3cba19eccb.png",
+    "achievements": [
+    "在抗日期间参加战斗",
+    "解放后任教授，并担任政协委员和全国妇联副主席"
+    ]
+    },
+    {
+    "name": "胡秀英",
+    "title": "博士",
+    "birth_year": 1908,
+    "death_year": 2012,
+    "graduate_year": 1933,
+    "major": "理科",
+    "university": "金女大",
+    "image": "https://picst.sunbangyan.cn/2023/10/28/69acc62a12dff5cb2decca09f09af2b0.png",
+    "achievements": [
+    "国际著名植物分类学家",
+    "哈佛大学终身教授",
+    "荣获奥地利金质功绩勋章"
+    ]
+    },
+    {
+    "name": "谢纬鹏",
+    "title":"女士",
+    "birth_year": 1901,
+    "death_year": 2006,
+    "graduate_year": 1930,
+    "major": "文科",
+    "university": "金女大",
+    "image":"https://picdm.sunbangyan.cn/2023/10/28/e4524a1c9f401231bc56d8097bdd14b7.png",
+    "achievements": [
+    "中国女权运动领导人之一",
+    "基督教女青年会总干事",
+    "民国政府妇联副主席"
+    ]
+    },
+    {
+    "name": "王明贞博士",
+    "title": "博士",
+    "birth_year": 1906,
+    "death_year": 2010,
+    "graduate_year": "1926-1928年",
+    "major": "理科（物理系）",
+    "university": "金女大、北平燕京大学",
+    "image":"https://picss.sunbangyan.cn/2023/10/28/630c298550aef7a28e33828a1fee2c48.png",
+    "achievements": [
+    "中国著名女物理学家",
+    "对统计物理学有深入研究",
+    "被誉为 '中国的居里夫人'"
+    ]
+    },
+    {
+    "name": "何怡贞",
+    "title": "博士",
+    "birth_year": 1910,
+    "death_year": 2008,
+    "graduate_year": 1930,
+    "major": "理科",
+    "university": "金女大",
+    "image":"https://picst.sunbangyan.cn/2023/10/28/de868988e7f7f1c6909e87c4b98b1b77.png",
+    "achievements": [
+    "光谱学与光谱分析专家",
+    "对发射光谱的分析有成就"
+    ]
+    },
+    {
+    "name": "吴懋仪",
+    "title": "博士",
+    "birth_year": 1905,
+    "death_year": 1973,
+    "graduate_year": 1928,
+    "major": "化学系",
+    "university": "金女大、麻省剑桥越第夫学院",
+    "image":"https://picss.sunbangyan.cn/2023/10/28/17a9bee6a4a9e91a3bf9c92bea35542e.png",
+    "achievements": [
+    "有机化学专家",
+    "曾任南京师范大学化学系主任"
+    ]
+    },
+    {
+    "name": "邓裕志",
+    "title": "女士",
+    "birth_year": 1900,
+    "death_year": 1996,
+    "graduate_year": 1926,
+    "major": "文科",
+    "university": "金女大",
+    "image":"https://picdl.sunbangyan.cn/2023/10/28/d934a99bdff7a73e339e84a729b18d11.png",
+    "achievements": [
+    "社会活动家",
+    "中国基督教三自爱国运动委员会副主席"
+    ]
+    },
+    {
+    "name": "鲁桂珍",
+    "title": "博士",
+    "birth_year": 1904,
+    "death_year": 1991,
+    "graduate_year": 1926,
+    "major": "理科",
+    "university": "金女大",
+    "image":"https://picdm.sunbangyan.cn/2023/10/28/250caa0d4c2e4a1c34988298bd28bfbf.png",
+    "achievements": [
+    "英国著名科学家李约瑟的夫人",
+    "协助其研究和撰写巨著《中国科技思想史》"
+    ]
+    },
+    {
+    "name": "刘恩兰",
+    "title":"博士",
+    "birth_year": 1905,
+    "death_year": 1986,
+    "graduate_year": 1926,
+    "major": "未知",
+    "university": "金女大、美国牛津大学",
+    "image":"https://picdl.sunbangyan.cn/2023/10/28/9127e222d88938d832c1081d74871a2b.png",
+    "achievements": [
+    "地理学家",
+    "是中国第一位女海洋学专家"
+    ]
+    },
+    {
+    "name": "严彩韻",
+    "title": "教授",
+    "birth_year": 1902,
+    "death_year": 1993,
+    "graduate_year": 1921,
+    "major": "理科",
+    "university": "金女大",
+    "image":"https://picdl.sunbangyan.cn/2023/10/28/f8f6fc692016a3a9c29c038a15ddfa9f.png",
+    "achievements": [
+    "被列入《美国科学界杰出人士》、《美国科学领袖》及《(英国)皇家蓝皮书》"
+    ]
+    },
+    {
+    "name": "徐亦蓁",
+    "title": "博士",
+    "birth_year": 1894,
+    "death_year": 1981,
+    "graduate_year": 1919,
+    "major": "文科",
+    "university": "金女大",
+    "image":"https://picdl.sunbangyan.cn/2023/10/28/2b7e2090b302f5e70c38326ab0987a28.png",
+    "achievements": [
+    "是美国女生训导长协会第一位中国女会员",
+    "金女大旅美校友会第一任会长"
+    ]
+    },
+    {
+    "name": "吴贻芳",
+    "title": "博士",
+    "birth_year": 1893,
+    "death_year": 1985,
+    "graduate_year": null,
+    "major": "理科",
+    "university": "金女大",
+    "image":"https://picss.sunbangyan.cn/2023/10/28/9d4b5759b618b3607ab309b527c49479.png",
+    "achievements": [
+    "获得密执安大学“和平与智慧女神”奖",
+    "历任全国政协常委、民进中央副主席、全国妇联副主席、中国基督教三自爱国运动委员会名誉主席、江苏省副省长、省教育厅厅长等职务"
+    ]
+    }
+    ]}
