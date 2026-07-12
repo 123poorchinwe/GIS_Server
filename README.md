@@ -35,41 +35,7 @@
 </blockquote>
 
 <a id="screens"></a>
-<h2>界面展示</h2>
 
-<p>以下图片均使用仓库中的项目资源，展示系统的视觉风格与主要内容。</p>
-
-<div align="center">
-  <img src="./src/assets/main.webp" alt="GIS Server 主界面" width="92%">
-  <p><sub>系统主题界面</sub></p>
-</div>
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="./src/assets/main_1.jpg" alt="校园专题界面" width="100%"><br>
-      <b>校园专题</b><br>
-      <sub>校园空间、历史与专题内容入口</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="./src/assets/main2.jpg" alt="三维地理信息界面" width="100%"><br>
-      <b>三维地理信息</b><br>
-      <sub>Cesium 场景与校园建筑数据</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="./src/assets/login_bg.jpg" alt="用户登录界面背景" width="100%"><br>
-      <b>用户中心</b><br>
-      <sub>登录、注册、密码找回与反馈</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="./src/assets/main_3.jpg" alt="校园历史界面" width="100%"><br>
-      <b>校园历史</b><br>
-      <sub>历史点位与地点变迁展示</sub>
-    </td>
-  </tr>
-</table>
 
 <p align="center"><i>部分页面需要启动项目并加载三维瓦片后才能看到完整交互效果。</i></p>
 
