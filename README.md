@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/title.png" alt="GIS Server" width="100%">
+
   <br><br>
   <h1>GIS Server</h1>
   <p><b>Cesium 三维校园地理信息可视化平台</b></p>
