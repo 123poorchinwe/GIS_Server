@@ -1,87 +1,127 @@
 <div align="center">
-
-# 🌏 GIS Server
-
-### Cesium 三维校园地理信息可视化平台
-
-以三维校园为核心，融合历史地点、校友网络、时空变迁与空间分析。
-
-[![Vue](https://img.shields.io/badge/Vue-3.2-42b883?logo=vuedotjs&logoColor=white)](https://vuejs.org/)
-[![Cesium](https://img.shields.io/badge/Cesium-1.92-6CADDF?logo=cesium&logoColor=white)](https://cesium.com/)
-[![Vite](https://img.shields.io/badge/Vite-2.9-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![ECharts](https://img.shields.io/badge/ECharts-5.3-AA344D?logo=apacheecharts&logoColor=white)](https://echarts.apache.org/)
-[![3D Tiles](https://img.shields.io/badge/Data-3D%20Tiles-1F6FEB)](#三维数据)
+  <img src="./public/title.png" alt="GIS Server" width="100%">
+  <br><br>
+  <h1>GIS Server</h1>
+  <p><b>Cesium 三维校园地理信息可视化平台</b></p>
+  <p>让校园的空间、历史与人物关系，在三维世界中被看见。</p>
+  <br>
+  <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue-3.2-42b883?logo=vuedotjs&logoColor=white" alt="Vue"></a>
+  <a href="https://cesium.com/"><img src="https://img.shields.io/badge/Cesium-1.92-6CADDF?logo=cesium&logoColor=white" alt="Cesium"></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-2.9-646CFF?logo=vite&logoColor=white" alt="Vite"></a>
+  <img src="https://img.shields.io/badge/Data-3D%20Tiles-1677FF" alt="3D Tiles">
+  <img src="https://img.shields.io/github/stars/123poorchinwe/GIS_Server?style=flat&color=gold" alt="Stars">
+  <br><br>
+  <a href="#quick-start">快速开始</a> ·
+  <a href="#screens">界面展示</a> ·
+  <a href="#features">核心功能</a> ·
+  <a href="#routes">页面路由</a> ·
+  <a href="#deploy">部署指南</a>
+</div>
 
 <br>
 
-**[快速开始](#-快速开始) · [界面导览](#-界面导览) · [路由列表](#-路由速查) · [部署说明](#-构建与部署) · [常见问题](#-常见问题)**
+<table>
+  <tr>
+    <td align="center" width="25%"><b>🌐 三维校园</b><br><sub>Cesium 与 3D Tiles</sub></td>
+    <td align="center" width="25%"><b>🕰️ 时空叙事</b><br><sub>地点与历史变迁</sub></td>
+    <td align="center" width="25%"><b>👥 校友网络</b><br><sub>人物关系可视化</sub></td>
+    <td align="center" width="25%"><b>📐 空间分析</b><br><sub>天际线、阴影、可视域</sub></td>
+  </tr>
+</table>
 
+<blockquote>
+  <b>项目提示</b><br>
+  仓库包含大量 B3DM 三维瓦片，完整克隆和首次加载会比普通前端项目更慢。缺少 <code>public</code> 中的瓦片资源时，网页可以启动，但校园模型无法完整显示。
+</blockquote>
+
+<a id="screens"></a>
+<h2>界面展示</h2>
+
+<p>以下图片均使用仓库中的项目资源，展示系统的视觉风格与主要内容。</p>
+
+<div align="center">
+  <img src="./src/assets/main.webp" alt="GIS Server 主界面" width="92%">
+  <p><sub>系统主题界面</sub></p>
 </div>
 
----
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./src/assets/main_1.jpg" alt="校园专题界面" width="100%"><br>
+      <b>校园专题</b><br>
+      <sub>校园空间、历史与专题内容入口</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./src/assets/main2.jpg" alt="三维地理信息界面" width="100%"><br>
+      <b>三维地理信息</b><br>
+      <sub>Cesium 场景与校园建筑数据</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./src/assets/login_bg.jpg" alt="用户登录界面背景" width="100%"><br>
+      <b>用户中心</b><br>
+      <sub>登录、注册、密码找回与反馈</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./src/assets/main_3.jpg" alt="校园历史界面" width="100%"><br>
+      <b>校园历史</b><br>
+      <sub>历史点位与地点变迁展示</sub>
+    </td>
+  </tr>
+</table>
 
-## ✨ 项目亮点
+<p align="center"><i>部分页面需要启动项目并加载三维瓦片后才能看到完整交互效果。</i></p>
 
-| 🌐 三维校园 | 🕰️ 时空叙事 | 👥 人物网络 | 📐 空间分析 |
-| :---: | :---: | :---: | :---: |
-| Cesium 地球与校园建筑 | 地点变迁与历史点位 | 校友资料与关系展示 | 天际线、阴影、可视域 |
-| 多级 3D Tiles 加载 | 多时期信息对比 | D3 / ECharts 可视化 | Turf 空间计算支持 |
+<a id="features"></a>
+<h2>核心功能</h2>
 
-> [!IMPORTANT]
-> 仓库包含大量 `.b3dm` 三维瓦片，克隆时间和磁盘占用明显高于普通前端项目。只下载源码但遗漏 `public/` 中的瓦片数据时，页面可以启动，但校园三维模型不会完整显示。
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌍 三维校园浏览</h3>
+      <p>在 Cesium 地球中加载校园建筑 3D Tiles，支持相机旋转、缩放、倾斜和逐级精细化加载。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏛️ 校园地点变迁</h3>
+      <p>按照地点与年代组织校园资料，对比不同历史阶段中的建筑、环境和空间变化。</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👥 校友关系网络</h3>
+      <p>结合人物头像、资料与关系连线，展示校友之间的联系和群体结构。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📍 历史点位</h3>
+      <p>通过地图标记组织历史地点和事件，查看年代、简介及关联图片资料。</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📐 三维空间分析</h3>
+      <p>项目包含天际线、阴影和可视域等 Cesium 空间分析工具代码。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>✈️ 动态飞线</h3>
+      <p>使用动态线条表达地点之间的迁移、联系、访问路径或空间流向。</p>
+    </td>
+  </tr>
+</table>
 
-## 🧭 系统概览
+<a id="quick-start"></a>
+<h2>快速开始</h2>
 
-```mermaid
-flowchart LR
-    HOME["🏠 门户首页"] --> EARTH["🌐 三维校园"]
-    HOME --> STORY["🕰️ 校园时空故事"]
-    HOME --> USER["👤 用户中心"]
+<h3>环境要求</h3>
 
-    EARTH --> ANALYSIS["📐 空间分析"]
-    ANALYSIS --> SKY["天际线"]
-    ANALYSIS --> FLY["动态飞线"]
+<ul>
+  <li>Node.js 16 或 18</li>
+  <li>npm 8 或更高版本</li>
+  <li>支持 WebGL 2.0 的 Chrome 或 Edge</li>
+  <li>建议使用 8 GB 以上内存和独立显卡</li>
+</ul>
 
-    STORY --> PLACE["地点变迁"]
-    STORY --> HISTORY["历史点位"]
-    STORY --> ALUMNI["校友网络"]
-
-    USER --> LOGIN["登录 / 注册"]
-    USER --> FEEDBACK["用户反馈"]
-
-    classDef primary fill:#1677ff,color:#fff,stroke:#0958d9;
-    classDef secondary fill:#e6f4ff,color:#003a8c,stroke:#69b1ff;
-    class HOME,EARTH primary;
-    class STORY,USER,ANALYSIS secondary;
-```
-
-GIS Server 是一个基于 Vue 3、Vite 和 Cesium 的 WebGIS 项目。系统以三维校园场景为主入口，将地理空间数据、校园历史信息和人物关系组织在统一的浏览器应用中。
-
-## 🛠️ 技术栈
-
-| 层次 | 技术 | 用途 |
-| --- | --- | --- |
-| 前端框架 | Vue 3 | 组件与页面组织 |
-| 工程工具 | Vite 2 | 开发服务器与生产构建 |
-| 三维 GIS | Cesium 1.92 | 地球、相机、三维场景与分析 |
-| 三维数据 | 3D Tiles / B3DM | 校园建筑分级加载 |
-| 路由与状态 | Vue Router 4 / Vuex 4 | Hash 路由与状态管理 |
-| 图表网络 | ECharts / D3 / d3-cloud | 图表、关系图和词云 |
-| 空间计算 | Turf.js | 浏览器端空间分析 |
-| 二维地图 | Leaflet | 二维地图能力 |
-| 网络请求 | Axios | 接口和数据请求 |
-| 样式 | CSS / Less | 页面布局与主题 |
-
-## 🚀 快速开始
-
-### 运行环境
-
-- Node.js 16 或 18
-- npm 8 或更高版本
-- 支持 WebGL 2.0 的 Chrome / Edge
-- 建议 8 GB 以上内存，并使用独立显卡浏览大型三维场景
-
-### 安装与启动
+<h3>安装与运行</h3>
 
 ```bash
 git clone https://github.com/123poorchinwe/GIS_Server.git
@@ -90,340 +130,139 @@ npm install
 npm run dev
 ```
 
-打开终端显示的网址，通常是：
+在浏览器中打开终端显示的地址，通常是：
 
 ```text
 http://localhost:5173
 ```
 
-项目使用 Hash 路由，专题页面地址类似：
+本项目使用 Hash 路由，三维场景地址示例：
 
 ```text
 http://localhost:5173/#/earth
 ```
 
-## 🖼️ 界面导览
-
-> 下列图片为依据当前路由和组件结构绘制的界面结构示意，并非运行截图。它们用于快速说明每个页面的内容和操作路径。
-
-### 核心场景
+<h3>三维场景操作</h3>
 
 <table>
-<tr>
-<td width="50%" valign="top">
-
-#### 🏠 门户首页
-
-`/#/` · `main_page.vue`
-
-系统品牌、功能导航与专题入口。适合作为所有功能的统一起点。
-
-```mermaid
-flowchart TB
-  A["校园主题首屏"] --> B["功能入口"]
-  B --> C["三维校园"]
-  B --> D["时空专题"]
-  B --> E["用户中心"]
-```
-
-</td>
-<td width="50%" valign="top">
-
-#### 🌐 三维地球
-
-`/#/earth` · `cesiumMap.vue`
-
-加载 Cesium 地球和校园 3D Tiles，是平台的核心交互场景。
-
-```mermaid
-flowchart TB
-  A["Cesium 场景"] --> B["校园建筑"]
-  A --> C["相机交互"]
-  A --> D["分析工具"]
-```
-
-</td>
-</tr>
+  <tr><th>操作</th><th>作用</th></tr>
+  <tr><td>左键拖动</td><td>旋转或平移场景</td></tr>
+  <tr><td>鼠标滚轮</td><td>拉近或拉远视角</td></tr>
+  <tr><td>右键拖动</td><td>调整观察角度，具体行为取决于控制器配置</td></tr>
+  <tr><td>停止移动</td><td>等待更高精度的三维瓦片逐步加载</td></tr>
 </table>
 
-三维场景常用操作：
-
-| 操作 | 作用 |
-| --- | --- |
-| 左键拖动 | 旋转或平移场景 |
-| 鼠标滚轮 | 拉近或拉远视角 |
-| 右键拖动 | 调整观察角度，具体取决于控制器配置 |
-| 停止移动 | 等待更高精度瓦片逐步加载 |
-
-### 校园时空专题
+<a id="routes"></a>
+<h2>页面路由</h2>
 
 <table>
-<tr>
-<td width="33%" valign="top">
-
-#### 👥 校友网络
-
-`/#/schoolmate`
-
-人物节点、校友资料和关系连线。
-
-```mermaid
-flowchart TB
- A["人物节点"] --> B["校友资料"]
- A --> C["关系连线"]
-```
-
-</td>
-<td width="33%" valign="top">
-
-#### 🏛️ 地点变迁
-
-`/#/location`
-
-按地点和年代浏览校园空间变化。
-
-```mermaid
-flowchart TB
- A["选择地点"] --> B["选择时期"]
- B --> C["前后对比"]
-```
-
-</td>
-<td width="33%" valign="top">
-
-#### 📍 历史点位
-
-`/#/history`
-
-通过地图点位查看年代、简介和资料。
-
-```mermaid
-flowchart TB
- A["历史地图"] --> B["选择点位"]
- B --> C["查看资料"]
-```
-
-</td>
-</tr>
+  <tr><th>页面</th><th>访问地址</th><th>主要用途</th></tr>
+  <tr><td>🏠 门户首页</td><td><code>/#/</code></td><td>品牌展示和功能导航</td></tr>
+  <tr><td>🌐 三维地球</td><td><code>/#/earth</code></td><td>Cesium 校园三维场景</td></tr>
+  <tr><td>🛡️ 管理员</td><td><code>/#/superuser</code></td><td>管理员入口和管理功能</td></tr>
+  <tr><td>👤 普通用户</td><td><code>/#/normaluser</code></td><td>普通用户登录入口</td></tr>
+  <tr><td>📝 用户注册</td><td><code>/#/register</code></td><td>填写并提交注册资料</td></tr>
+  <tr><td>🔑 找回密码</td><td><code>/#/forget</code></td><td>身份验证和密码重置</td></tr>
+  <tr><td>💬 用户反馈</td><td><code>/#/feedback</code></td><td>提交问题与建议</td></tr>
+  <tr><td>👥 校友网络</td><td><code>/#/schoolmate</code></td><td>人物资料和关系图</td></tr>
+  <tr><td>🏛️ 地点变迁</td><td><code>/#/location</code></td><td>地点与年代对比</td></tr>
+  <tr><td>📍 历史点位</td><td><code>/#/history</code></td><td>历史地点和事件资料</td></tr>
+  <tr><td>🧩 综合变化</td><td><code>/#/complex</code></td><td>多维度变化信息</td></tr>
+  <tr><td>📐 天际线</td><td><code>/#/skyline</code></td><td>三维场景天际轮廓分析</td></tr>
+  <tr><td>✈️ 动态飞线</td><td><code>/#/flyline</code></td><td>空间联系动态展示</td></tr>
 </table>
 
-<details>
-<summary><strong>🧩 综合变化界面</strong>　<code>/#/complex</code></summary>
-
-综合变化页面从时间、地点和变化类型三个维度组织内容。
-
-```mermaid
-flowchart LR
-  A["时间"] --> D["综合对比结果"]
-  B["地点"] --> D
-  C["变化类型"] --> D
-```
-
-</details>
-
-### 三维分析专题
+<h2>技术架构</h2>
 
 <table>
-<tr>
-<td width="50%" valign="top">
-
-#### 📐 天际线分析
-
-`/#/skyline`
-
-设置观察位置和视角后提取场景天际轮廓。应先等待三维模型加载完成。
-
-```mermaid
-flowchart LR
- A["观察位置"] --> B["设置视角"]
- B --> C["天际线结果"]
-```
-
-</td>
-<td width="50%" valign="top">
-
-#### ✈️ 动态飞线
-
-`/#/flyline` · `fly_line.vue`
-
-使用动态线条表达地点之间的迁移、联系或流向。
-
-```mermaid
-flowchart LR
- A["起点"] -->|"动态飞线"| B["终点"]
- B --> C["空间关系网络"]
-```
-
-</td>
-</tr>
+  <tr><th>分类</th><th>技术</th><th>用途</th></tr>
+  <tr><td>前端框架</td><td>Vue 3</td><td>组件与页面组织</td></tr>
+  <tr><td>开发构建</td><td>Vite 2</td><td>开发服务器和生产打包</td></tr>
+  <tr><td>三维 GIS</td><td>Cesium 1.92</td><td>地球、相机、模型和空间分析</td></tr>
+  <tr><td>三维数据</td><td>3D Tiles / B3DM</td><td>校园建筑分级加载</td></tr>
+  <tr><td>可视化</td><td>ECharts / D3</td><td>图表和关系网络</td></tr>
+  <tr><td>空间计算</td><td>Turf.js</td><td>浏览器端空间分析</td></tr>
+  <tr><td>二维地图</td><td>Leaflet</td><td>二维地图展示</td></tr>
+  <tr><td>网络请求</td><td>Axios</td><td>接口和数据加载</td></tr>
 </table>
 
-### 用户与管理
-
-```mermaid
-flowchart LR
-  LOGIN["普通用户"] --> REGISTER["注册"]
-  LOGIN --> FORGET["找回密码"]
-  LOGIN --> FEEDBACK["用户反馈"]
-  ADMIN["管理员"] --> MANAGE["管理功能"]
-
-  classDef user fill:#f6ffed,stroke:#95de64,color:#135200;
-  classDef admin fill:#fff1f0,stroke:#ff7875,color:#820014;
-  class LOGIN,REGISTER,FORGET,FEEDBACK user;
-  class ADMIN,MANAGE admin;
-```
-
-<details>
-<summary><strong>👤 普通用户</strong>　<code>/#/normaluser</code></summary>
-
-提供账号和密码输入、登录、注册与找回密码入口。实际鉴权是否生效取决于后端服务。
-
-</details>
-
-<details>
-<summary><strong>🛡️ 管理员</strong>　<code>/#/superuser</code></summary>
-
-提供管理员身份入口和管理功能区。前端界面不等同于安全权限控制，生产系统必须由后端完成鉴权和授权。
-
-</details>
-
-<details>
-<summary><strong>📝 用户注册</strong>　<code>/#/register</code></summary>
-
-填写用户信息、校验必填项并提交注册。验证码、用户入库等功能需要后端接口支持。
-
-</details>
-
-<details>
-<summary><strong>🔑 找回密码</strong>　<code>/#/forget</code></summary>
-
-输入账号信息、完成身份验证并设置新密码。邮件或短信发送需要额外服务支持。
-
-</details>
-
-<details>
-<summary><strong>💬 用户反馈</strong>　<code>/#/feedback</code></summary>
-
-用于提交问题描述和建议。推荐同时填写复现步骤、浏览器版本和联系方式。
-
-</details>
-
-## 🗺️ 路由速查
-
-| 页面 | Hash 地址 | 组件 / 模块 |
-| --- | --- | --- |
-| 🏠 门户首页 | `/#/` | `main_page.vue` |
-| 🌐 三维地球 | `/#/earth` | `cesiumMap.vue` |
-| 🛡️ 管理员 | `/#/superuser` | `super_user.vue` |
-| 👤 普通用户 | `/#/normaluser` | `normal_user.vue` |
-| 📝 用户注册 | `/#/register` | `register.vue` |
-| 🔑 找回密码 | `/#/forget` | `forget_code.vue` |
-| 💬 用户反馈 | `/#/feedback` | `user_feedback.vue` |
-| 👥 校友网络 | `/#/schoolmate` | `schoolmate_network.vue` |
-| 🏛️ 地点变迁 | `/#/location` | `location_change.vue` |
-| 📍 历史点位 | `/#/history` | `history_point.vue` |
-| 🧩 综合变化 | `/#/complex` | `complex_change.vue` |
-| 📐 天际线 | `/#/skyline` | 天际线分析模块 |
-| ✈️ 动态飞线 | `/#/flyline` | `fly_line.vue` |
-
-## 📁 项目结构
+<h2>项目结构</h2>
 
 ```text
 GIS_Server/
 ├─ public/
-│  ├─ 7/ 8/ 9/ 10/ ...       # 多级 B3DM 三维瓦片
-│  ├─ tileset*.json           # 3D Tiles 入口与分块配置
-│  └─ title.png               # 公共界面资源
+│  ├─ 7/ 8/ 9/ 10/ ...       多级 B3DM 三维瓦片
+│  ├─ tileset*.json           3D Tiles 入口配置
+│  └─ title.png               项目标题图片
 ├─ src/
 │  ├─ assets/
-│  │  ├─ location_change/     # 地点变迁数据
-│  │  └─ school_mate/         # 校友头像和关系资料
-│  ├─ components/             # 页面与业务组件
-│  ├─ router/index.js         # Hash 路由
-│  ├─ utils/                  # Cesium 与空间分析工具
+│  │  ├─ location_change/     地点变迁数据
+│  │  └─ school_mate/         校友头像和关系资料
+│  ├─ components/             页面与业务组件
+│  ├─ router/index.js         Hash 路由配置
+│  ├─ utils/                  Cesium 与空间分析工具
 │  ├─ App.vue
 │  └─ main.js
-├─ docs/examples/             # 示例 Notebook
-├─ notebooks/                 # 栅格处理 Notebook
+├─ docs/examples/             示例 Notebook
+├─ notebooks/                 栅格处理 Notebook
 ├─ package.json
 └─ vite.config.js
 ```
 
-## 🧱 三维数据
+<h2>三维数据</h2>
 
-- `public/tileset.json` 和 `tileset_*.json` 是 3D Tiles 入口。
-- 数字目录中的 `.b3dm` 是实际三维瓦片，不应随意改名或移动。
-- tileset JSON 中的相对路径必须和瓦片目录一致。
-- 建议将大型三维资源迁移至 Git LFS、对象存储或独立静态资源服务器。
-- 发布服务器需要允许访问 `.json` 和 `.b3dm`，并为 B3DM 配置合适的 MIME 类型。
+<ul>
+  <li><code>public/tileset.json</code> 和 <code>tileset_*.json</code> 是 3D Tiles 入口。</li>
+  <li>数字目录中的 <code>.b3dm</code> 是实际三维瓦片，不要随意改名或移动。</li>
+  <li>Tileset JSON 中的相对路径必须与瓦片目录保持一致。</li>
+  <li>大型资源建议使用 Git LFS、对象存储或独立静态资源服务器。</li>
+  <li>部署服务器应允许访问 JSON 和 B3DM 文件。</li>
+</ul>
 
-## 📦 构建与部署
+<a id="deploy"></a>
+<h2>构建与部署</h2>
 
 ```bash
 npm run build
 npm run preview
 ```
 
-生产部署检查清单：
+<table>
+  <tr><th>检查项</th><th>说明</th></tr>
+  <tr><td>✅ 静态文件</td><td><code>dist</code> 目录已完整上传</td></tr>
+  <tr><td>✅ Cesium 资源</td><td>Widget、Worker 和静态资源路径正确</td></tr>
+  <tr><td>✅ Tileset</td><td><code>tileset*.json</code> 请求返回 HTTP 200</td></tr>
+  <tr><td>✅ B3DM</td><td>三维瓦片可以访问，MIME 配置正确</td></tr>
+  <tr><td>✅ 部署路径</td><td>Vite <code>base</code> 与部署子目录一致</td></tr>
+  <tr><td>✅ 页面检查</td><td>13 个 Hash 路由均可正常访问</td></tr>
+</table>
 
-- [ ] `dist/` 已完整上传
-- [ ] Cesium 静态资源路径正确
-- [ ] `tileset*.json` 请求返回 HTTP 200
-- [ ] `.b3dm` 文件可正常访问
-- [ ] 部署子目录与 Vite `base` 一致
-- [ ] 13 个 Hash 路由均已逐页检查
-- [ ] 浏览器控制台无 WebGL、跨域或资源路径错误
-
-## ❓ 常见问题
+<h2>常见问题</h2>
 
 <details>
-<summary><strong>三维模型没有显示</strong></summary>
-
-检查浏览器 Network 面板中的 `tileset*.json` 与 `.b3dm` 请求；确认路径、文件大小、跨域设置和服务器 MIME 类型正确。大型瓦片首次加载需要等待。
-
+  <summary><b>三维模型没有显示</b></summary>
+  <p>检查浏览器 Network 面板中的 tileset JSON 和 B3DM 请求，确认路径、跨域设置和服务器 MIME 类型正确。大型瓦片首次加载需要等待。</p>
 </details>
 
 <details>
-<summary><strong>页面刷新后出现 404</strong></summary>
-
-项目采用 Hash 路由，地址应包含 `/#/`。Hash 后面的路径不会交给服务器解析。
-
+  <summary><b>页面刷新后出现 404</b></summary>
+  <p>项目使用 Hash 路由，地址应包含 <code>/#/</code>。Hash 后面的路径不会交给服务器解析。</p>
 </details>
 
 <details>
-<summary><strong>场景卡顿或显存占用过高</strong></summary>
-
-降低窗口分辨率，减少同时加载的 tileset，并调整 Cesium 屏幕空间误差和缓存策略。
-
+  <summary><b>场景卡顿或显存占用过高</b></summary>
+  <p>降低窗口分辨率、减少同时加载的 Tileset，并调整 Cesium 的屏幕空间误差和缓存策略。</p>
 </details>
 
 <details>
-<summary><strong>登录、注册或反馈无法真正提交</strong></summary>
-
-检查 Axios 接口地址和后端服务。部署前端静态文件不会自动提供用户数据库、鉴权、验证码和反馈存储。
-
+  <summary><b>登录、注册或反馈不能真正提交</b></summary>
+  <p>请检查 Axios 接口地址和后端服务。仅部署前端文件不会自动提供数据库、鉴权、验证码和反馈存储。</p>
 </details>
 
-<details>
-<summary><strong>修改 JSON 后页面没有变化</strong></summary>
-
-确认 JSON 语法、字段名称和图片路径正确，然后清除浏览器缓存并重新构建。
-
-</details>
-
-## 🤝 开发约定
-
-- Token、接口地址等环境配置放入 `.env`，不要提交真实密钥。
-- 大型 3D Tiles 使用独立版本和备份，避免代码提交反复传输二进制资源。
-- 新增页面时同步更新 `src/router/index.js` 和本 README。
-- 合并代码前运行 `npm run build`，并检查相关路由。
-
----
+<br>
 
 <div align="center">
-
-**GIS Server · 让校园的空间、历史与人物关系在三维世界中被看见**
-
-<sub>当前仓库尚未提供独立开源许可证；复制、分发或二次开发前请先联系项目所有者。</sub>
-
+  <p><b>GIS Server</b></p>
+  <p><sub>Vue · Cesium · 3D Tiles · Campus History</sub></p>
+  <p><sub>当前仓库尚未提供独立开源许可证，复制或二次分发前请先联系项目所有者。</sub></p>
 </div>
